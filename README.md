@@ -1,4 +1,6 @@
-Giphy Saga
+![License](https://img.shields.io/github/license/K3ndang/group-giphy-saga-project.svg?style=for-the-badge) ![Repo Size](https://img.shields.io/github/languages/code-size/K3ndang/group-giphy-saga-project.svg?style=for-the-badge) ![TOP_LANGUAGE](https://img.shields.io/github/languages/top/K3ndang/group-giphy-saga-project.svg?style=for-the-badge) ![FORKS](https://img.shields.io/github/forks/K3ndang/group-giphy-saga-project.svg?style=for-the-badge&social) ![Stars](https://img.shields.io/github/stars/K3ndang/group-giphy-saga-project.svg?style=for-the-badge)
+    
+# Giphy Search
 
 This app you can search for funny giphy, add it to your favorite, and add categories to it.
 
