@@ -1,69 +1,47 @@
-# Giphy Search and Favorites
+Giphy Saga
 
-This week you will be building a Giphy searching and favoriting application which allows the user to save images and sort them into categories.
-
-In this project you will need to utilize React, Redux, Redux-Saga and integrate them with a 3rd party API....all in a group project!
-
-## Team Setup
-Do not clone this repository. Instead, have one person create a new repo by clicking on the **Use this template** button to make a copy. Make your team collaborators on the new repo you have created. The rest of the team members that did not make the initial repo will clone directly from the person who created the new repo, **do NOT fork** the repo.
+This app you can search for funny giphy, add it to your favorite, and add categories to it.
 
 
-## Create Database and Tables
+## Built With
 
-See the `database.sql` file for database setup and details. It offers some of the SQL to get you started but you'll need to set up your tables and the relationships between them.
+<a href="http://expressjs.com/en/resources/middleware/multer.html"><img src="https://user-images.githubusercontent.com/6388707/66124653-463a2d00-e5e5-11e9-8fed-b5bca26b66ea.png" height="40px" width="40px" /></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" height="40px" width="40px" /></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" height="40px" width="40px" /></a><a href="https://material-ui.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" height="40px" width="40px" /></a><a href="https://nodejs.org/en/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" height="40px" width="40px" /></a><a href="https://www.postgresql.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" height="40px" width="40px" /></a><a href="https://reactjs.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" height="40px" width="40px" /></a><a href="https://redux.js.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" height="40px" width="40px" /></a>
 
+<!-- ### Prerequisites
 
-## Development Setup Instructions
+Softwares used in creating this application includes:
 
-* Run `npm install`
-* Start postgres if not running already by using `brew services start postgresql`
-* Run `npm run server` to start the server
-* Run `npm run client` to start the client
-* Navigate to `localhost:3000`
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Postico](https://eggerapps.at/postico/)
+- [Node.js](https://nodejs.org/en/)
+- [Nodemon](https://nodemon.io/)
+- [Multer](http://expressjs.com/en/resources/middleware/multer.html)
 
+The application's repository may require alterations to lines of codes if used with other softwares that are not listed above.
+ -->
+### Installation
 
-## Base Features
+1. To run this application, the user should fork the repository onto their own GitHub account. In the user's repository, the user should copy the link and clone the repository onto their local system. Navigate to the repository folder using the terminal and run command line `npm install`
+   - `$ cd ../my-family`
+   - `$ npm install`
 
-You will need 2 views for the Base Features. You should put some thought into the UI and how to style it.
+<br />
 
+2.  Create a local postgreSQL database called `giphy-search-favorites` with Postico using the command lines from the database.sql file. Using different database systems may require the user to alter or add additional command lines to reflect the example database provided.
 
-### Search View
+<br />
 
-- Allow a user to enter a search string and submit a search request.
-- Query the `Giphy API Search Endpoint` with the given search string **FROM THE SERVER**.
-- Display the results on the DOM.
-- Allow a user to Favorite any of the resulting images. You'll need to think about what information to save to your own database. Generally you only store the minimum needed to show this image again on the **Favorites View**.
+3. To start up the application, enter in the terminal the npm command lines of:
 
+   - `npm run server`
+   - `npm run client`
 
-### Favorites View
+   The server should be running on `http://localhost:5000` whereas the client should be on `http://localhost:3000`. Both the server and the client is required to be up and running for the application to run successfully.
 
-- Allow a user to see all of the Giphy images they have Favorited. The actual images need to appear on the DOM.
-- Allow a user to set a category for a favorite image.
-    - Each favorite image can only have 1 category at a time.
-    - The category needs to be one of the categories in the database.
+## Usage
 
+Once the application is up and running, the user should be redirected to the browser with the application loaded. If not, open up a browser and enter in the url:
 
-## Existing Routes
-
-You are given two router modules on the server with stubs for the routes you may need.
-
-- `GET /api/category` (complete)
-    - Returns a list of all categories from the table ordered by name. You may test it if your server is running: [http://localhost:5000/api/category](http://localhost:5000/api/category)
-
-- `POST /api/favorite` (incomplete)
-    - For adding a new favorite image. You'll need to think about what is needed. Does it need a category?
-
-- `PUT /api/favorite` (incomplete)
-    - For setting a category on an image. It expects both a query parameter and a data body. Feel free to change it as needed.
-
-
-## Stretch Features
-
-1. Allow favorites to be removed/unfavorited
-1. Allow for a favorite to have **many categories** instead of just one
-1. Implement the pagination feature for the Giphy search results
-1. Add another view that allows a user to manage the categories
-    - User should be able to create a new category
-    - User should be able to edit an existing category
-    - User should be able to delete/remove an existing category
+- `http://localhost:3000`
 
